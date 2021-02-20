@@ -57,6 +57,12 @@ function keyPressed() {
   }
 }
 
+function touchStarted() {
+  if(player.posY >= standardY){
+    player.jump=true;
+  }
+}
+
 function jump() {
   if(player.jump == true && player.posY >> standardY - player.JumpHeight){
     player.posY -= player.jumpSpeed;
