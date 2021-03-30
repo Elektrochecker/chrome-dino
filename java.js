@@ -52,7 +52,7 @@ function render() {
 }
 
 function keyPressed() {
-  if(keyCode == 32 && player.posY >= standardY){
+  if(player.posY >= standardY){
     player.jump=true;
   }
 }
